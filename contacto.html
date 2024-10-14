@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eunica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagenes/logo.svg" alt="">
+            <ul>
+                <li>
+                    <a href="index.html" class="item-nav">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html" class="item-nav">Productos</a>
+                </li>
+                <li>
+                    <a href="reseñas.html" class="item-nav">Reseñas</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="item-nav">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="https://formspree.io/f/mldeejye" method="post">
+                <label for="nombre">
+                    <input type="text" name="nombre" class="contacto__formulario__datos" placeholder="Ingrese su Nombre"required>
+                </label>
+                <label for="email">
+                    <input type="email" name="email" class="contacto__formulario__datos" placeholder="Ingrese su Email" required>
+                </label>
+                <label for="telefono">
+                    <input type="tel" name="telefono" class="contacto__formulario__datos" placeholder="Ingrese su teléfono" required>
+                </label>
+                <label for="mensaje">
+                    <textarea name="name" cols="30" rows="10" class="contacto__formulario__textarea" placeholder="Deje aqui su mensaje"></textarea>
+                </label>
+                <input type="submit" value="Enviar" class="contacto__formulario__boton__enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
