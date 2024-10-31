@@ -28,7 +28,7 @@
     </header>
     <main>
         <section>
-            <form action="https://formspree.io/f/mldeejye" method="post">
+            <!-- <form action="https://formspree.io/f/mldeejye" method="post">
                 <label for="nombre">
                     <input type="text" name="nombre" class="contacto__formulario__datos" placeholder="Ingrese su Nombre"required>
                 </label>
@@ -42,7 +42,35 @@
                     <textarea name="name" cols="30" rows="10" class="contacto__formulario__textarea" placeholder="Deje aqui su mensaje"></textarea>
                 </label>
                 <input type="submit" value="Enviar" class="contacto__formulario__boton__enviar">
-            </form>
+            </form> -->
+
+            <div class="div-form">
+                <form action="https://formspree.io/f/mldeejye" method="post">
+                    <div class="div-input">
+                        <label for="nombre">Ingrese su Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="div-input">
+                        <label for="apellido">Ingrese su Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="div-input">
+                        <label for="email">Ingrese su Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="div-input">
+                        <label for="telefono">Ingrese su teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="div-input">
+                        <label for="mensaje">Deje aquí su mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <div class="div-boton">
+                        <button type="submit" class="boton">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>

@@ -42,106 +42,88 @@ nav ul {
 
 /* FORMULARIO CONTACTO */
 
-.contacto__formulario {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border: #fa92a5 solid;
-    margin-bottom: 80px;
-  }
-  .contacto__formulario .contacto__formulario__datos, .contacto__formulario .contacto__formulario__textarea {
-    background: none;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid;
-    font-family: "Source Sans Pro", "Fira Sans", "Fira Sans Extra Condensed", sans-serif;
-    padding: 8px 0;
-  }
-  .contacto__formulario .contacto__formulario__boton__rehacer, .contacto__formulario .contacto__formulario__boton__enviar {
-    background: none;
-    border: none;
-    outline: none;
-    font-family: "Source Sans Pro", "Fira Sans", "Fira Sans Extra Condensed", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    background-color: #D83A56;
+.contacto {
+    background-color: white;
+    padding: 40px;
     border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  @media only screen and (max-width: 540px) {
-    .contacto__formulario {
-      padding: 8px 0;
-      width: 100%;
-    }
-    .contacto__formulario input, .contacto__formulario textarea {
-      margin: 0;
-    }
-    .contacto__formulario .contacto__formulario__datos, .contacto__formulario .contacto__formulario__textarea, .contacto__formulario .contacto__formulario__boton__rehacer, .contacto__formulario .contacto__formulario__boton__enviar {
-      width: 70%;
-    }
-    .contacto__formulario .contacto__formulario__datos, .contacto__formulario .contacto__formulario__textarea {
-      font-size: 0.8rem;
-    }
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10vh auto;
+}
 
-    .contacto__formulario .contacto__formulario__boton__enviar {
-      height: 48px;
-      padding: 8px 32px;
-      margin: 24px 8px 32px 8px;
-    }
-  }
-  @media only screen and (min-width: 540px) and (max-width: 1070px) {
-    .contacto__formulario {
-      padding: 24px 0;
-      width: 90%;
-    }
-    .contacto__formulario input, .contacto__formulario textarea {
-      margin: 0 36px;
-    }
-    .contacto__formulario .contacto__formulario__datos, .contacto__formulario .contacto__formulario__textarea, .contacto__formulario .contacto__formulario__boton__rehacer, .contacto__formulario .contacto__formulario__boton__enviar {
-      width: 70%;
-    }
-    .contacto__formulario .contacto__formulario__datos, .contacto__formulario .contacto__formulario__textarea {
-      font-size: 0.95rem;
-    }
-    .contacto__formulario .contacto__formulario__boton__rehacer {
-      height: 48px;
-      padding: 8px 32px;
-      margin: 48px 8px 0px 8px;
-    }
-    .contacto__formulario .contacto__formulario__boton__enviar {
-      height: 48px;
-      padding: 8px 32px;
-      margin: 24px 8px 32px 8px;
-    }
-  }
-  @media only screen and (min-width: 1070px) {
-    .contacto__formulario {
-      padding: 24px 0;
-      width: 80%;
-    }
-    .contacto__formulario input, .contacto__formulario textarea {
-      margin: 0 36px;
-    }
-    .contacto__formulario .contacto__formulario__datos {
-      width: 40%;
-      margin-bottom: 24px;
-      font-size: 1rem;
-    }
-    .contacto__formulario .contacto__formulario__textarea {
-      width: 90%;
-      max-width: 90%;
-      min-width: 90%;
-      min-height: 56px;
-      max-height: 184px;
-      font-size: 1rem;
-    }
-    .contacto__formulario .contacto__formulario__boton__rehacer, .contacto__formulario .contacto__formulario__boton__enviar {
-      height: 48px;
-      padding: 8px 32px;
-      margin: 20px 8px 40px 36px;
-    }
-  }
+h2 {
+    text-align: center;
+    color: #d14860;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+
+
+.div-form {
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #f5b5b5;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin-top: 10vh;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.div-input {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.div-boton {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #e74c5e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #c7434f;
+}
+
+
+
