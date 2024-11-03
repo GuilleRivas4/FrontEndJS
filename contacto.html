@@ -3,62 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Mis estilos -->
     <link rel="stylesheet" href="css/style.css">
     <title>Eunica</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="imagenes/logo.svg" alt="">
+            <img src="imagenes\iconos\logo.svg" alt="logo">
             <ul>
                 <li>
-                    <a href="index.html" class="item-nav">Inicio</a>
+                    <a href="index.html" class="itemNav">Inicio</a>
                 </li>
                 <li>
-                    <a href="productos.html" class="item-nav">Productos</a>
+                    <a href="productos.html" class="itemNav">Productos</a>
                 </li>
                 <li>
-                    <a href="reseñas.html" class="item-nav">Reseñas</a>
+                    <a href="reseñas.html" class="itemNav">Reseñas</a>
                 </li>
                 <li>
-                    <a href="contacto.html" class="item-nav">Contacto</a>
+                    <a href="contacto.html" class="itemNav">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <div class="div-form">
+            <div class="divForm">
                 <form action="https://formspree.io/f/mldeejye" method="post">
-                    <div class="div-input">
+                    <div class="divInput">
                         <label for="nombre">Ingrese su Nombre</label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
-                    <div class="div-input">
+                    <div class="divInput">
                         <label for="apellido">Ingrese su Apellido</label>
                         <input type="text" id="apellido" name="apellido" required>
                     </div>
-                    <div class="div-input">
+                    <div class="divInput">
                         <label for="email">Ingrese su Email</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="div-input">
+                    <div class="divInput">
                         <label for="telefono">Ingrese su teléfono</label>
                         <input type="tel" id="telefono" name="telefono" required>
                     </div>
-                    <div class="div-input">
+                    <div class="divInput">
                         <label for="mensaje">Deje aquí su mensaje</label>
                         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
                     </div>
-                    <div class="div-boton">
+                    <div class="divBoton">
                         <button type="submit" class="boton">Enviar</button>
                     </div>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        
+    <footer class="footer">
+        <div class="contenidoFooter">
+            <div class="logoFooter">
+                <img src="imagenes\iconos\logo_footer.svg" alt="EuNica Logo" class="logo">
+            </div>
+            <div class="redesFooter">
+                <h2>¡Seguinos!</h2>
+                <p><img src="imagenes\iconos\instagram.svg" alt="Instagram" class="icono"> @eunicapasteleria</p>
+                <p><img src="imagenes\iconos\facebook.svg" alt="Facebook" class="icono"> @eunicaPasteleria</p>
+            </div>
+            <div class="contactoFooter">
+                <h2>Contactanos</h2>
+                <p>Lun a Sáb de 9 a 18hs</p>
+                <p><img src="imagenes\iconos\whatsapp.svg" alt="WhatsApp" class="icono"> +54 221 555 1234</p>
+                <p><img src="imagenes\iconos\email.svg" alt="Email" class="icono"> eunicapasteleria@gmail.com</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

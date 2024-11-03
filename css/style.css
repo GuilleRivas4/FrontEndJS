@@ -2,6 +2,8 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: "Roboto", sans-serif;
+    
 }
 
 
@@ -32,13 +34,16 @@ nav ul {
     align-items: center;
 }
 
-.item-nav{
+.itemNav{
     text-decoration: none;
     color: white;
 }
 
+/* INDEX */
 
-
+.carousel-inner {
+    height: 90vh;
+}
 
 /* FORMULARIO CONTACTO */
 
@@ -59,10 +64,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Formulario */
-
-
-.div-form {
+.divForm {
     width: 80%;
     max-width: 600px;
     border: 2px solid #f5b5b5;
@@ -71,9 +73,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    margin-top: 10vh;
+    margin: 10vh auto;
 }
 
 form {
@@ -82,7 +82,7 @@ form {
     gap: 20px;
 }
 
-.div-input {
+.divInput {
     flex: 1 1 45%;
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ textarea {
     resize: vertical;
 }
 
-.div-boton {
+.divBoton {
     display: flex;
     gap: 10px;
     width: 100%;
@@ -125,13 +125,12 @@ textarea {
     background-color: #c7434f;
 }
 
-
+/* PRODUCTOS */
 
 .productos {
     text-align: center;
     padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #e5a9a9;
 }
 
 .productos h1 {
@@ -139,7 +138,7 @@ textarea {
     margin-bottom: 20px;
 }
 
-.productos .productos-grid {
+.productos .productosGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -183,7 +182,87 @@ textarea {
     font-weight: bold;
 }
 
+/* RESEÑAS */
 
+.contenedorCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
 
+.cardResena {
+    background-color: #e5a9a9;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    text-align: center;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.calificacion {
+    color: gold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.textoResena {
+    font-size: 14px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #D83A56;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.contenidoFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.logoFooter .logo {
+    width: 120px;
+}
+
+.redesFooter, .contactoFooter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.redesFooter h2,
+.contactoFooter h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.redesFooter p,
+.contactoFooter p {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.icono {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
 
 
